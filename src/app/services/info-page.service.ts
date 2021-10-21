@@ -35,7 +35,6 @@ export class InfoPageService {
     .subscribe((result: any) => {
 
       this.infoTeam = result;
-      //console.log(this.infoTeam);
     })
   }
 }
