@@ -1,4 +1,4 @@
-<section class="ae-container-fluid ae-container-fluid--full">
+<section *ngIf="productDescription">
     <header [ngStyle]="{'background-image': 'url(assets/products/' + id + '/main.jpg)'}"
      class="rk-portfolio-cover  item-inside-1">
       <div class="item-inside__meta">
@@ -25,11 +25,11 @@
           <p class="ae-eta">{{productDescription.desc1}}</p>
         </div>
         <div class="ae-grid__item item-lg-6 item-lg--offset-1">
-          <img src="assets/products/{{id}}/pic-1.jpg" alt="Urku Portfolio"></div>
+          <img src="assets/products/{{ id }}/pic-1.jpg" alt="Urku Portfolio"></div>
       </div>
       <div class="ae-grid ae-grid--collapse">
         <div class="ae-grid__item item-lg-8">
-          <img src="assets/products/{{id}}/pic-2.jpg" alt="Urku Portfolio"></div>
+          <img src="assets/products/{{ id }}/pic-2.jpg" alt="Urku Portfolio"></div>
         <div class="ae-grid__item item-lg-3 item-lg--offset-1 au-lg-ptp-1">
           <p>{{productDescription.desc2}}</p>
           <p class="ae-u-bolder">{{productDescription.subtitulo2}}</p>
@@ -42,4 +42,4 @@
               <use xlink:href="assets/img/symbols.svg#arrow"></use>
             </svg></span></a></div>
     </div>
-  </section>
+</section>>

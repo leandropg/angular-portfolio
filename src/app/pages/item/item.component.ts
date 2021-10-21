@@ -20,10 +20,11 @@ export class ItemComponent implements OnInit {
     this.route.params
     .subscribe( (parameters) => {
 
-      this.productService.getProduct(parameters.id)
+      this.id = parameters.id;
+
+      this.productService.getProduct(this.id)
       .subscribe((product: ProductDescription) => {
 
-        this.id = parameters.id;
         this.productDescription = product;
       });
     });
